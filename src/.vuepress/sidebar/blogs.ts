@@ -11,4 +11,9 @@ export const blogs = arraySidebar([
         link: "上下文工程-AI",
         icon: "database",
     },
+    {
+        text: "多头注意力实现",
+        link: "多头注意力实现",
+        icon: "database",
+    },
 ]);
