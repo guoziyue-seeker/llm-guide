@@ -14,6 +14,16 @@ export const blogs = arraySidebar([
     {
         text: "多头注意力实现",
         link: "多头注意力实现",
+        icon: "book",
+    },
+    {
+        text: "LLM显存占用",
+        link: "LLM显存占用",
+        icon: "database",
+    },
+    {
+        text: "RAG",
+        link: "RAG",
         icon: "database",
     },
 ]);
