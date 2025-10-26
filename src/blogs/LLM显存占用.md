@@ -16,17 +16,19 @@ KVcache：2byte*（K+V）
 $$
 2Φ + 2*2*b(s + n)hl
 $$
+
+
 Φ: 参数量
 
-**b：**batch_size
+b：batch_size
 
-**s：**输入序列长度
+s：输入序列长度
 
-**n：**输出序列长度
+n：输出序列长度
 
-**h：**隐藏层维度（d_model）
+h：隐藏层维度（d_model）
 
-**l：**transformer层数
+l：transformer层数
 
 ### 训练时显存占用
 
@@ -39,9 +41,13 @@ $$
 优化器：4Φ + 4Φ
 
 激活值：**self-attention** + **MLP**
+
+```latex
 $$
 20Φ+(34bsh+5bs^2a)∗l
 $$
+```
+
 Φ: 参数量
 
 b：batch_size
