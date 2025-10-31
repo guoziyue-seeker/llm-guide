@@ -4,12 +4,12 @@ export const blogs = arraySidebar([
     {
         text: "上下文工程",
         link: "上下文工程",
-        icon: "computer",
+        icon: "book",
     },
     {
         text: "上下文工程-AI",
         link: "上下文工程-AI",
-        icon: "database",
+        icon: "book",
     },
     {
         text: "多头注意力实现",
@@ -19,11 +19,16 @@ export const blogs = arraySidebar([
     {
         text: "LLM显存占用",
         link: "LLM显存占用",
-        icon: "database",
+        icon: "book",
     },
     {
         text: "RAG",
         link: "RAG",
-        icon: "database",
+        icon: "book",
+    },
+    {
+        text: "医疗知识检索",
+        link: "医疗知识检索",
+        icon: "book",
     },
 ]);
