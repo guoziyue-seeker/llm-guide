@@ -27,8 +27,8 @@ export const blogs = arraySidebar([
         icon: "book",
     },
     {
-        text: "医疗知识检索",
-        link: "医疗知识检索",
+        text: "意图识别",
+        link: "意图识别",
         icon: "book",
     },
 ]);
