@@ -12,13 +12,13 @@ export const blogs = arraySidebar([
         icon: "book",
     },
     {
-        text: "多头注意力实现",
-        link: "多头注意力实现",
+        text: "RAG",
+        link: "RAG",
         icon: "book",
     },
     {
-        text: "MLA",
-        link: "MLA",
+        text: "意图识别",
+        link: "意图识别",
         icon: "book",
     },
     {
@@ -27,13 +27,13 @@ export const blogs = arraySidebar([
         icon: "book",
     },
     {
-        text: "RAG",
-        link: "RAG",
+        text: "多头注意力实现",
+        link: "多头注意力实现",
         icon: "book",
     },
     {
-        text: "意图识别",
-        link: "意图识别",
+        text: "MLA",
+        link: "MLA",
         icon: "book",
     },
     {
