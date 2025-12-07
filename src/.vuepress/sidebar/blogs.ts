@@ -46,4 +46,9 @@ export const blogs = arraySidebar([
         link: "Prefill和Decoding",
         icon: "book",
     },
+    {
+        text: "MLA",
+        link: "MLA",
+        icon: "book",
+    },
 ]);
