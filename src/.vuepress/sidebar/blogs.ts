@@ -31,4 +31,9 @@ export const blogs = arraySidebar([
         link: "意图识别",
         icon: "book",
     },
+    {
+        text: "flash-attention",
+        link: "flash-attention",
+        icon: "book",
+    }
 ]);
