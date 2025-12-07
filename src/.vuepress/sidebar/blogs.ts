@@ -17,6 +17,11 @@ export const blogs = arraySidebar([
         icon: "book",
     },
     {
+        text: "MLA",
+        link: "MLA",
+        icon: "book",
+    },
+    {
         text: "LLM显存占用",
         link: "LLM显存占用",
         icon: "book",
@@ -44,11 +49,6 @@ export const blogs = arraySidebar([
     {
         text: "Prefill和Decoding",
         link: "Prefill和Decoding",
-        icon: "book",
-    },
-    {
-        text: "MLA",
-        link: "MLA",
         icon: "book",
     },
 ]);
