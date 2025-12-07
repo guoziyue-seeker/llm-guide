@@ -35,5 +35,15 @@ export const blogs = arraySidebar([
         text: "flash-attention",
         link: "flash-attention",
         icon: "book",
-    }
+    },
+    {
+        text: "Online Softmax",
+        link: "Online Softmax",
+        icon: "book",
+    },
+    {
+        text: "Prefill和Decoding",
+        link: "Prefill和Decoding",
+        icon: "book",
+    },
 ]);
