@@ -1,1 +1,107 @@
-// place your custom styles here
+// 毛玻璃卡片容器 - 网格布局
+.vp-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+  // 确保不继承任何奇怪的定位
+  position: relative;
+
+  // 重置 VPCard 在容器内的所有默认样式
+  > .vp-card {
+    display: flex !important;
+    flex-direction: column;
+    position: relative !important;
+    float: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-sizing: border-box;
+
+    // 毛玻璃效果
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 16px !important;
+    box-shadow:
+      0 2px 16px rgba(0, 0, 0, 0.06),
+      0 0 1px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.1),
+        0 0 1px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.65) !important;
+      border-color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    // 卡片内容区域
+    .vp-card-content {
+      padding: 20px !important;
+      flex: 1;
+    }
+
+    .vp-card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #1d1d1f;
+    }
+
+    .vp-card-desc {
+      font-size: 0.85rem;
+      color: #6e6e73;
+      line-height: 1.5;
+    }
+  }
+}
+
+// 暗色模式适配
+[data-theme="dark"] {
+  .vp-card-container > .vp-card {
+    background: rgba(40, 40, 45, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow:
+      0 2px 16px rgba(0, 0, 0, 0.2),
+      0 0 1px rgba(255, 255, 255, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    &:hover {
+      background: rgba(55, 55, 60, 0.7) !important;
+      border-color: rgba(255, 255, 255, 0.18) !important;
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.35),
+        0 0 1px rgba(255, 255, 255, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .vp-card-title {
+      color: #f5f5f7;
+    }
+
+    .vp-card-desc {
+      color: #a1a1a6;
+    }
+  }
+}
+
+// 给卡片页面添加微妙的背景渐变，让毛玻璃效果更明显
+.theme-hope-content {
+  background-image:
+    radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.04) 0, transparent 50%),
+    radial-gradient(at 80% 70%, rgba(168, 85, 247, 0.04) 0, transparent 50%);
+}
+
+[data-theme="dark"] .theme-hope-content {
+  background-image:
+    radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.06) 0, transparent 50%),
+    radial-gradient(at 80% 70%, rgba(168, 85, 247, 0.06) 0, transparent 50%);
+}

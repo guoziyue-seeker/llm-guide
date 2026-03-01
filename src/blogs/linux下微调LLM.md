@@ -1,4 +1,10 @@
-## linux下微调LLM
+---
+title: Linux 下微调 LLM
+date: 2025-10-25
+category: 博客
+---
+
+## Linux 下微调 LLM
 
 切换下载来源
 

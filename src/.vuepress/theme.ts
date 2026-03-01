@@ -40,16 +40,25 @@ export default hopeTheme({
       type: "katex",
     },
     align: true,
+    attrs: true,
     codeTabs: true,
     gfm: true,
+    hint: true,
+    imgLazyload: true,
+    imgSize: true,
+    mark: true,
+    sub: true,
+    sup: true,
+    tabs: true,
     tasklist: true,
+    figure: true,
   },
 
   plugins: {
     blog: true,
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "VPBanner"],
     },
 
     icon: {
